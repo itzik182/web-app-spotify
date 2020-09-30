@@ -1,0 +1,13 @@
+<div class="grid-container">
+  <div class="item-wrapper" *ngFor="let playlist of playlists">
+    <div *ngIf="playlist.images.length > 0" class="item-image">
+      <img class="image" src="{{playlist.images[0].url}}">
+    </div>
+    <div class="item-footer">
+      <div class="item-name">
+        {{playlist.name}}
+      </div>
+      <a class="item-btn" href="/tracks/{{playlist.id}}">View Playlist Tracks</a>
+    </div>
+  </div>
+</div>

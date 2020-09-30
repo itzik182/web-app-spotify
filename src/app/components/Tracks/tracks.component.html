@@ -1,0 +1,13 @@
+<div class="grid-container">
+  <div class="item-wrapper" *ngFor="let track of tracks">
+    <div class="item-image">
+      <img class="" src="{{track.image.url}}">
+    </div>
+    <div class="item-footer">
+      <div class="item-name">
+        {{track.name}}
+      </div>
+      <a class="item-btn" target="_blank" href="{{track.external_urls.spotify}}">Play on Spotify</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+.bar-container {
+  width: 60%;
+  height: 50px;
+  margin: 0 auto 30px auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .bar-menu {
+    display: flex;
+    align-items: center;
+
+    .menu-item {
+      margin: 10px;
+    }
+  }
+
+  .logo {
+    margin-right: 10px;
+
+    .spotify-logo {
+      width: 100px;
+    }
+  }
+}

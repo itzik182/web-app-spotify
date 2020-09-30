@@ -1,0 +1,13 @@
+<div class="grid-container">
+  <div class="item-wrapper" *ngFor="let category of categories">
+    <div *ngIf="category.icons.length > 0" class="item-image">
+      <img class="image" src="{{category.icons[0].url}}">
+    </div>
+    <div class="item-footer">
+      <div class="item-name">
+        {{category.name}}
+      </div>
+      <a class="item-btn" href="/playlists/{{category.id}}">View Category Playlists</a>
+    </div>
+  </div>
+</div>

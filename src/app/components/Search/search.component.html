@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="search-header">Enter an playlist in the search box below</div>
+    <div class="search-input">
+      <input type="text" [formControl]="query" placeholder="Search for Playlist...">
+      <i class="search icon"></i>
+    </div>
+</div>
+
+<div class="results" *ngIf="results">
+  <div class="item" *ngFor="let res of results">
+    <div class="item-image" *ngIf="res.images.length > 0">
+      <a href="/tracks/{{res.id}}">
+        <img src="{{res.images[0].url}}" alt="">
+      </a>
+    </div>
+    <div class="content">
+      <div class="title">
+        <a href="/tracks/{{res.id}}">
+          {{res.name}}
+        </a>
+      </div>
+      <div class="item-total">
+        Total Tracks: {{res.tracks.total}}
+      </div>
+    </div>
+  </div>
+</div>
